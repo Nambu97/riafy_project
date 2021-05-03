@@ -1,0 +1,62 @@
+<html>
+    <head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+       <title>National Stock Exchange</title>
+    </head>
+<body onload="get_all_company();">
+	<div class="col-xs-12" style="text-align:center;">
+		<label style="font-size: 28px;">National Stock Exchange</label>
+	</div>
+
+	<div class="col-xs-12" style="text-align:center;">  
+		<label style="color:darkslateblue;font-size:21px;">Company</label><br>
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<select type="dropdown" class="form-control" id="category" onchange="get_company_details();"  style="background-color: white;font-size: 18px; height: 40px; background-color: white; box-shadow: 0px 3px 5px #0000001F;">
+				<option value="SELECT">--SELECT COMPANY--</option>
+			</select>
+		</div>
+		<div class="col-xs-4"></div>
+	</div>
+	<div class="col-xs-12" >
+	<br><br>
+	</div>
+	<div class="col-xs-12" style="display:none" id="for_guide">
+		<div class="card" style="background-color: #FFFFFF;color:#434343;border-radius:20px;padding-top: 10px;padding-left: 10px;">
+			<div class="container">
+					<div class="col-xs-4" >
+						<label class="head">Market Cap</label><br/>
+						<label class="subhead" id="market_cap"></label><br/>
+						<label class="head" >Current Price</label><br/>
+						<label  class="subhead"id="current_price"></label><br/>
+						<label class="head">Stock P/E</label><br/>
+						<label  class="subhead"id="stock_p"></label><br/>
+						<label class="head">Debt</label><br/>
+						<label class="subhead" id="debt"></label><br/>
+					</div>
+					<div class="col-xs-4" >
+						<label class="head">Divident Yield</label><br/>
+						<label class="subhead" id="div_yield"></label><br/>
+						<label class="head">ROCE</label><br>
+						<label class="subhead" id="roce"></label><br/>
+						<label class="head">ROE</label><br/>
+						<label class="subhead" id="roe"></label><br/>
+					</div>
+					<div class="col-xs-4" >
+						<label class="head">Debt Equality</label><br/>
+						<label class="subhead" id="debt_equ"></label><br/>
+						<label class="head">Eps</label><br>
+						<label class="subhead" id="eps"></label><br/>
+						<label class="head">Reserves</label><br/>
+						<label class="subhead" id="reserves"></label><br/>
+					</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
