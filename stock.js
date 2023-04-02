@@ -19,12 +19,15 @@ app.get('/', function(req,res) {
 
 // Instruct node to run the socket server on the following port
 
-var port = process.env.PORT || 3306;
+const http = require('http');
+const { futimesSync } = require('fs');
+//const hostname = '62.171.175.131';
+const hostname = 'localhost';
+const port = 80;
 
+let server = http.createServer(app);
 
-app.listen(port, function () {
-    console.log("Server Has Started!");
-	console.log('listening on port ' + port);
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}`);
 });
-
 /*************  Coupal SOCKET  ******************/

@@ -22,11 +22,12 @@
     "razorpay": "^2.0.6",
     "serve-favicon": "^2.5.0",
     "sharp": "^0.28.1",
-    "socket.io": "^4.0.1"
+    "socket.io": "^4.0.1",
+    "start": "^5.1.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon stock.js"
   },
   "author": "",
   "license": "ISC"
