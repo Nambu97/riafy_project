@@ -52,6 +52,7 @@ exports.get_company = async function (query, req, res) {
 		}
 		else
 		{
+			console.log(rows);
 			res.send(rows);
 		}
 	})
